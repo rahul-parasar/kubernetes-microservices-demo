@@ -1,0 +1,7 @@
+spec:
+  type: NodePort          # Important! This exposes the service outside the cluster
+  ports:
+  - port: 80             # Service port inside cluster
+    targetPort: 80       # Container port
+    nodePort: 30007      # Port accessible on EC2 public IP
+

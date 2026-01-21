@@ -7,7 +7,7 @@ This project demonstrates how to deploy a microservices-based application on a K
 - Backend Microservice (Flask API)
 - Kubernetes Deployments & Services
 
-## 📁 Project Structure
+## 📁 Project Structure 
 backend/ 
 frontend/ 
 k8s/

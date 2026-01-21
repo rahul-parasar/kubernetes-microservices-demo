@@ -25,7 +25,7 @@ k8s/
 sudo yum install docker git -y 
 sudo systemctl start docker 
 sudo usermod -aG docker ec2-user 
-newgrp docker 
+newgrp docker
 
 2️⃣ Start Kubernetes
 minikube start --driver=docker 

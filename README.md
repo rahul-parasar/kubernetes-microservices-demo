@@ -9,7 +9,7 @@ This project demonstrates how to deploy a microservices-based application on a K
 
 ## 📁 Project Structure 
  -> backend/ 
- -> frontend/ 
+ -> frontend/
  -> k8s/
 
 ## ⚙️ Prerequisites

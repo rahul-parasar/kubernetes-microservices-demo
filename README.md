@@ -21,29 +21,28 @@ k8s/
 
 ## 🚀 Setup Steps
 
-1️⃣ Install Tools
+1️⃣ Install Tools 
 sudo yum install docker git -y 
 sudo systemctl start docker 
 sudo usermod -aG docker ec2-user 
 newgrp docker
 
-2️⃣ Start Kubernetes
-minikube start --driver=docker 
+2️⃣ Start Kubernetes minikube start --driver=docker
 
 3️⃣ Build and Push Images 
-docker build -t backend-app backend/ 
-docker build -t frontend-app frontend/ 
-docker tag backend-app yourdockerhub/backend-app:v1 
-docker tag frontend-app yourdockerhub/frontend-app:v1 
-docker push yourdockerhub/backend-app:v1 
-docker push yourdockerhub/frontend-app:v1 
+docker build -t backend-app backend/
+docker build -t frontend-app frontend/
+docker tag backend-app yourdockerhub/backend-app:v1
+docker tag frontend-app yourdockerhub/frontend-app:v1
+docker push yourdockerhub/backend-app:v1
+docker push yourdockerhub/frontend-app:v1
 
 4️⃣ Deploy to Kubernetes
-kubectl apply -f k8s/ 
+kubectl apply -f k8s/
 
 5️⃣ Access Application
-minikube service frontend-service --url 
+minikube service frontend-service --url
 
 ✅ Output
-
 Frontend webpage loads and backend API responds successfully.
+

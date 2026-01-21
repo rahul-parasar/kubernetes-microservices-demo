@@ -8,9 +8,9 @@ This project demonstrates how to deploy a microservices-based application on a K
 - Kubernetes Deployments & Services
 
 ## 📁 Project Structure 
-backend/ 
-frontend/ 
-k8s/
+ -> backend/ 
+ -> frontend/ 
+ -> k8s/
 
 ## ⚙️ Prerequisites
 - Amazon Linux 2023 EC2 Instance
